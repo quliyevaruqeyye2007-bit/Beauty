@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care & Glow</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LOGIN SCREEN -->
+
+    <section id="login-screen">
+
+        <div class="login-container">
+
+            <div class="login-left">
+
+                <h1>CARE & GLOW</h1>
+
+                <p class="login-subtitle">
+                    Premium Beauty & Cosmetics Store
+                </p>
+
+                <form id="login-form">
+
+                    <div class="input-box">
+                        <input type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
+                    </div>
+
+                    <button type="submit" id="login-btn">
+                        LOGIN
+                    </button>
+
+                </form>
+
+                <div class="demo-info">
+                    <p><strong>Admin:</strong> admin@mail.com</p>
+                    <p><strong>Password:</strong> 12345</p>
+                </div>
+
+            </div>
+
+            <div class="login-right">
+
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MAIN WEBSITE -->
+
+    <div id="main-site">
+
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+            💖 100% Original Products • Fast Delivery • Premium Quality 💖
+        </div>
+
+        <!-- NAVBAR -->
+
+        <header class="navbar">
+
+            <div class="logo">
+                CARE & GLOW
+            </div>
+
+            <nav>
+
+                <a href="#">HOME</a>
+                <a href="#products">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+
+            </nav>
+
+            <div class="cart">
+
+                🛍️ Cart
+                <span id="cart-count">0</span>
+
+            </div>
+
+        </header>
+
+        <!-- CATEGORY -->
+
+        <div class="categories">
+
+            <span>FACE CARE</span>
+            <span>BODY CARE</span>
+            <span>HAIR CARE</span>
+            <span>MAKEUP</span>
+
+        </div>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    NEW COLLECTION
+                </span>
+
+                <h2>
+                    Discover Your <br>
+                    Beauty Glow ✨
+                </h2>
+
+                <p>
+                    Premium makeup and skincare products
+                    for your daily beauty routine.
+                </p>
+
+                <button>
+                    SHOP NOW
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section id="products">
+
+            <div class="section-title">
+
+                <h2>Featured Products</h2>
+
+                <p>
+                    Most loved beauty essentials
+                </p>
+
+            </div>
+
+            <div class="products-grid">
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1631214540553-ff044a3ff1d4?q=80&w=1200&auto=format&fit=crop">
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            MAKEUP
+                        </span>
+
+                        <h3>Gloss Lip Shine</h3>
+
+                        <p>
+                            Gives lips a natural glossy finish.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $12.99
+                            </span>
+
+                            <button onclick="addToCart()">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop">
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            HAIR CARE
+                        </span>
+
+                        <h3>Hair Care Oil</h3>
+
+                        <p>
+                            Deep nourishing oil for silky hair.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $18.50
+                            </span>
+
+                            <button onclick="addToCart()">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=1200&auto=format&fit=crop">
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            BODY CARE
+                        </span>
+
+                        <h3>Body Shimmer Gel</h3>
+
+                        <p>
+                            Soft glowing shimmer for smooth skin.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $15.99
+                            </span>
+
+                            <button onclick="addToCart()">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
